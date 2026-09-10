@@ -1,4 +1,3 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -26,7 +25,10 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 snapshots:
-  +target_schema: "{{ target.schema }}"
+  product_data:
+    +target_schema: PRODUCT_DATA_MANAGEMENT
+    fbb_wip:
+      +target_schema: PRODUCT_DATA_MANAGEMENT_WIP
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -43,3 +45,15 @@ models:
       +materialized: ephemeral
     marts:
       +materialized: table
+    
+    # NEW: Add WIP schema configuration
+    fbb_wip:
+      staging:
+        +materialized: view
+        +schema: PRODUCT_DATA_MANAGEMENT_WIP
+      intermediate:
+        +materialized: ephemeral
+        +schema: PRODUCT_DATA_MANAGEMENT_WIP
+      marts:
+        +materialized: table
+        +schema: PRODUCT_DATA_MANAGEMENT_WIP
