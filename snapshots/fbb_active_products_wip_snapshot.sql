@@ -11,6 +11,6 @@
     )
 }}
 
-select * from {{ ref('fbb_daily_active_products_wip') }}
+select * from {{ ref('fbb_daily_active_products') }}
 
 {% endsnapshot %}
