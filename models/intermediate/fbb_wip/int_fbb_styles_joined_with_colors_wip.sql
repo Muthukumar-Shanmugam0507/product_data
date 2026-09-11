@@ -47,11 +47,11 @@ select
     , st.IS_FINAL_SALE
     , pr.FULFILLMENT_INDICATOR
 from
-    {{ref('stg_land__fbb_styles_wip')}} as st
-    join {{ref('stg_land__fbb_sizes_wip')}} as sz on sz.STYLE_ID = st.STYLE_ID
-    join {{ref('stg_land__fbb_inventory_wip')}} as inv on inv.SIZE_ID = sz.SIZE_ID
-    join {{ref('stg_land__fbb_prices_wip')}} as pc on pc.SIZE_ID = sz.SIZE_ID
-    join {{ref('stg_land__fbb_products_wip')}} as pr on pr.PRODUCT_ID = st.PRODUCT_ID
-    join {{ref('stg_land__fbb_color_images_wip')}} as cim on cim.COLOR_ID = st.COLOR_ID
-    join {{ref('stg_land__fbb_images_wip')}} as img on img.IMAGE_ID = cim.IMAGE_ID
-    join {{ref('stg_land__fbb_brands_wip')}} as br on pr.BRAND_ID = br.BRAND_ID
+    {{ref('stg_land__fbb_styles')}} as st
+    join {{ref('stg_land__fbb_sizes')}} as sz on sz.STYLE_ID = st.STYLE_ID
+    join {{ref('stg_land__fbb_inventory')}} as inv on inv.SIZE_ID = sz.SIZE_ID
+    join {{ref('stg_land__fbb_prices')}} as pc on pc.SIZE_ID = sz.SIZE_ID
+    join {{ref('stg_land__fbb_products')}} as pr on pr.PRODUCT_ID = st.PRODUCT_ID
+    join {{ref('stg_land__fbb_color_images')}} as cim on cim.COLOR_ID = st.COLOR_ID
+    join {{ref('stg_land__fbb_images')}} as img on img.IMAGE_ID = cim.IMAGE_ID
+    join {{ref('stg_land__fbb_brands')}} as br on pr.BRAND_ID = br.BRAND_ID
