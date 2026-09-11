@@ -10,9 +10,6 @@
         ifnull(ap.PCM_SEO_DESCRIPTION, 'product') ||
         ifnull(ap.CUSTOMER_REVIEW_COUNT, 0) ||
         ifnull(ap.CUSTOMER_REVIEW_AVERAGE, 0) ||
-        ifnull(PRODUCT_URL, 'product') ||
-        ifnull(tx.DIVISION, 'product') ||
-        ifnull(tx.CATEGORY, 'product') ||
-        ifnull(tx.SUBCATEGORY, 'product')
+        ifnull(PRODUCT_URL, 'product')
     )
 {% endmacro %}

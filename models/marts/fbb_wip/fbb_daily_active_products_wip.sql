@@ -1,3 +1,12 @@
+with dummy_taxonomy as (
+    select
+        cast(null as varchar) as DIVISION,
+        cast(null as varchar) as CATEGORY,
+        cast(null as varchar) as SUBCATEGORY,
+        cast(null as number) as PRODUCT_ID
+    where 1 = 0
+)
+
 select
     ap.BRAND_ID
     , ap.BRAND_CODE
@@ -12,10 +21,10 @@ select
     , ap.CUSTOMER_REVIEW_AVERAGE
     , ap.IMAGE_URL
     , ( {{ get_product_url('ap.PRODUCT_ID', 'ap.BRAND_CODE') }} ) as PRODUCT_URL
-    , tx.DIVISION
-    , tx.CATEGORY
-    , tx.SUBCATEGORY
+    -- Temporary placeholders
+    , cast(null as varchar) as DIVISION
+    , cast(null as varchar) as CATEGORY
+    , cast(null as varchar) as SUBCATEGORY
     , ({{ get_active_products_key() }}) as HASH_KEY
 from
     {{ ref('int_active_products_wip') }} as ap
-    left join {{ ref('int_ds_product_taxonomy') }} as tx on tx.PRODUCT_ID = ap.PRODUCT_ID
