@@ -88,7 +88,7 @@ models:
   - name: stg_land__fbb_size_conversions_wip
     description: "View from LAND database - SIZECONVERSION table"
 
-  - name: stg_land__fbb_classification_wip
+  - name: stg_land__fbb_classifications_wip
     description: "View from LAND database - CLASSIFICATION table"
 
   - name: stg_land__fbb_sfra_sizes_wip

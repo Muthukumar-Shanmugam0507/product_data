@@ -44,17 +44,17 @@ models:
       - name: DIVISION
       - name: CATEGORY
       - name: SUBCATEGORY
-  - name: kobe_inference_data
-    description: "Table that contains all new products that need to be attributed"
-    columns:
-      - name: BRAND_ID
-      - name: MF_PRODUCT_ID
-      - name: PRODUCT_ID
-      - name: BRAND_CODE
-      - name: COLOR_ID
-      - name: IMAGE_URL
-      - name: SOURCE
-      - name: TITLE
-      - name: MS_DESCRIPTION
-      - name: WEBSITE
-      - name: DATE_CREATED
+  #- name: kobe_inference_data
+  #  description: "Table that contains all new products that need to be attributed"
+  #  columns:
+  #    - name: BRAND_ID
+  #    - name: MF_PRODUCT_ID
+  #    - name: PRODUCT_ID
+  #    - name: BRAND_CODE
+  #    - name: COLOR_ID
+  #    - name: IMAGE_URL
+  #    - name: SOURCE
+  #    - name: TITLE
+  #    - name: MS_DESCRIPTION
+  #    - name: WEBSITE
+  #    - name: DATE_CREATED 

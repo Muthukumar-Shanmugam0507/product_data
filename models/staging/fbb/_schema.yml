@@ -34,25 +34,25 @@ models:
       - name: PCM_UPDATED_AT
         description: "Date the product was updated in PCM"
 
-  - name: stg_land__fbb__brands
+  - name: stg_land__fbb_brands
     description: "View from LAND database for FBB brands"
 
-  - name: stg_land__fbb__colors
+  - name: stg_land__fbb_colors
     description: "View from LAND database for FBB colors"
 
-  - name: stg_land__fbb__styles
+  - name: stg_land__fbb_styles
     description: "View from LAND database for FBB styles"
 
-  - name: stg_land__fbb__sizes
+  - name: stg_land__fbb_sizes
     description: "View from LAND database for FBB sizes"
 
-  - name: stg_land__fbb__inventory
+  - name: stg_land__fbb_inventory
     description: "View from LAND database for FBB inventory"
 
   - name: stg_land__fbb_prices
     description: "View from LAND database for FBB price"
 
-  - name: stg_land_fbb__product_images
+  - name: stg_land__fbb_product_images
     description: "View from LAND database for product images"
 
   - name: stg_land__fbb_images
@@ -88,7 +88,7 @@ models:
   - name: stg_land__fbb_size_conversions
     description: "View from LAND database - SIZECONVERSION table"
 
-  - name: stg_land__fbb_classification
+  - name: stg_land__fbb_classifications
     description: "View from LAND database - CLASSIFICATION table"
 
   - name: stg_land__fbb_sfra_sizes
