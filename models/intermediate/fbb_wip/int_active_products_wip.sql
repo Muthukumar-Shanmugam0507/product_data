@@ -13,8 +13,8 @@ select
     , CUSTOMER_REVIEW_AVERAGE
     , any_value(IMAGE_URL) as IMAGE_URL
 from
-    {{ ref('int_fbb_styles_joined_with_colors') }} as st
-    join {{ref('int_sfra_products_join_active_sfra_categories')}} as sfp on sfp.PRODUCT_ID = to_varchar(st.PRODUCT_ID)
+    {{ ref('int_fbb_styles_joined_with_colors_wip') }} as st
+    join {{ref('int_sfra_products_join_active_sfra_categories_wip')}} as sfp on sfp.PRODUCT_ID = to_varchar(st.PRODUCT_ID)
 where
     STYLE_STATUS = 1
     and SIZE_STATUS = 1

@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_land__fbb_products
+  - name: stg_land__fbb_products_wip
     description: "View from LAND database for FBB products"
 
     columns:
@@ -34,77 +34,77 @@ models:
       - name: PCM_UPDATED_AT
         description: "Date the product was updated in PCM"
 
-  - name: stg_land__fbb__brands
+  - name: stg_land__fbb_brands_wip
     description: "View from LAND database for FBB brands"
 
-  - name: stg_land__fbb__colors
+  - name: stg_land__fbb_colors_wip
     description: "View from LAND database for FBB colors"
 
-  - name: stg_land__fbb__styles
+  - name: stg_land__fbb_styles_wip
     description: "View from LAND database for FBB styles"
 
-  - name: stg_land__fbb__sizes
+  - name: stg_land__fbb_sizes_wip
     description: "View from LAND database for FBB sizes"
 
-  - name: stg_land__fbb__inventory
+  - name: stg_land__fbb_inventory_wip
     description: "View from LAND database for FBB inventory"
 
-  - name: stg_land__fbb_prices
+  - name: stg_land__fbb_prices_wip
     description: "View from LAND database for FBB price"
 
-  - name: stg_land_fbb__product_images
+  - name: stg_land__fbb_product_images_wip
     description: "View from LAND database for product images"
 
-  - name: stg_land__fbb_images
+  - name: stg_land__fbb_images_wip
     description: "View from LAND database for images"
 
-  - name: stg_land__fbb_color_images
+  - name: stg_land__fbb_color_images_wip
     description: "View from LAND database - COLORIMAGE table"
 
-  - name: stg_land__fbb_attributes
+  - name: stg_land__fbb_attributes_wip
     description: "View from LAND database - ATTRIBUTE table"
 
-  - name: stg_land__fbb_product_attribute_values
+  - name: stg_land__fbb_product_attribute_values_wip
     description: "View from LAND database - PRODUCTATTRIBUTEVALUE table"
 
-  - name: stg_land__fbb_omniture_data
+  - name: stg_land__fbb_omniture_data_wip
     description: "View from LAND database - OMNITURE_DATA table"
 
-  - name: stg_land__fbb_color_sort_order_skus
+  - name: stg_land__fbb_color_sort_order_skus_wip
     description: "View from LAND database - COLORSORTORDERSKU table"
 
-  - name: stg_land__fbb_sfra_final_prices
+  - name: stg_land__fbb_sfra_final_prices_wip
     description: "View from LAND database - SFRA_FINALPRICE table"
 
-  - name: stg_land__fbb_sfra_final_price_promos
+  - name: stg_land__fbb_sfra_final_price_promos_wip
     description: "View from LAND database - SFRA_FINALPRICEPROMO table"
 
-  - name: stg_land__fbb_sfra_category_product_splits
+  - name: stg_land__fbb_sfra_category_product_splits_wip
     description: "View from LAND database - SFRA_CATEGORY_PRODUCTSPLIT table"
 
-  - name: stg_land__fbb_br_size_conversions
+  - name: stg_land__fbb_br_size_conversions_wip
     description: "View from LAND database - BR_SIZECONVERSION table"
 
-  - name: stg_land__fbb_size_conversions
+  - name: stg_land__fbb_size_conversions_wip
     description: "View from LAND database - SIZECONVERSION table"
 
-  - name: stg_land__fbb_classification
+  - name: stg_land__fbb_classification_wip
     description: "View from LAND database - CLASSIFICATION table"
 
-  - name: stg_land__fbb_sfra_sizes
+  - name: stg_land__fbb_sfra_sizes_wip
     description: "View from LAND database - SFRA_SIZE table"
 
-  - name: stg_land__fbb_size_selector_table_cp
+  - name: stg_land__fbb_size_selector_table_cp_wip
     description: "View from LAND database - SIZESELECTORTABLE_CP table"
 
-  - name: stg_land__fbb_color_mappings
+  - name: stg_land__fbb_color_mappings_wip
     description: "View from LAND database - COLORMAPPING table"
 
-  - name: stg_land__fbb_sfra_image_urls
+  - name: stg_land__fbb_sfra_image_urls_wip
     description: "View from LAND database - SFRA_IMAGEURL table"
 
-  - name: stg_land__fbb_attribute_values
+  - name: stg_land__fbb_attribute_values_wip
     description: "View from LAND database - ATTRIBUTEVALUE table"
 
-  - name: stg_land__fbb_sfra_product_urls
+  - name: stg_land__fbb_sfra_product_urls_wip
     description: "View from LAND database - SFRA_PRODUCTURL table"

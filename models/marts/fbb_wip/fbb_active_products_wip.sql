@@ -17,4 +17,4 @@ select
     , SUBCATEGORY
     , date(DBT_VALID_FROM) as CREATED_AT
 from
-    {{ ref('int_fbb_active_products_from_snapshot') }}
+    {{ ref('int_fbb_active_products_from_snapshot_wip') }}
